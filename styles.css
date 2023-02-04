@@ -62,3 +62,21 @@ body {
 .black.activeClass {
   background-color: #333;
 }
+
+.btndiv{
+  padding: 13px;
+  padding-bottom: 0px;
+}
+.btn{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+
+}
