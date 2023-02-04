@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(#614385 , #516395);  */
+  background: linear-gradient(#000428 , #004e92); 
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.pianoContainer {
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(#8d9194 , #2c3e50); 
+  padding: 40px;
+}
+.piano {
+  border: none;
+  display: flex;
+}
+.para{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.activeClass {
+  background-color: #CCC;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.activeClass {
+  background-color: #333;
+}
